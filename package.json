@@ -1,0 +1,13 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio of vaiperlexmar",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss style/style.css -w"
+  },
+  "author": "vaiperlexmar",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

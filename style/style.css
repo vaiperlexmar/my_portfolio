@@ -1,0 +1,132 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+body {
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%;
+  font-family: "Heebo", sans-serif;
+  color: #21243d; }
+
+section {
+  padding-top: 2.4rem; }
+
+.heading-primary {
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 4rem;
+  margin-bottom: 2rem; }
+
+.paragraph {
+  font-size: 1.6rem; }
+
+.heading-secondary {
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  text-transform: capitalize; }
+
+.u-center-text {
+  text-align: center; }
+
+.btn {
+  border: 0;
+  padding: 1.6rem 5rem;
+  font-size: 2rem;
+  cursor: pointer;
+  border-radius: 0.2rem; }
+  .btn--red {
+    color: #fff;
+    background-color: #ff6464; }
+
+.post {
+  font-size: 1.6rem;
+  background-color: #fff;
+  padding: 2rem;
+  margin: 1.8rem 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem #bbe1fa;
+  cursor: pointer;
+  transition: all 0.2s; }
+  .post__date {
+    padding-right: 2.4rem;
+    border-right: 1px solid black;
+    margin-right: 2.4rem; }
+  .post__heading {
+    font-size: 2.2rem;
+    margin-bottom: 1.2rem; }
+  .post__meta {
+    margin-bottom: 2rem; }
+  .post:active {
+    scale: 0.95;
+    box-shadow: 0 0.2rem 1rem #bbe1fa; }
+
+.work {
+  padding: 0 1.8rem 1.8rem 1.8rem;
+  position: relative; }
+  .work__img {
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 1.8rem; }
+  .work__heading {
+    font-size: 2.4rem;
+    margin-bottom: 1.6rem; }
+  .work__meta {
+    margin-bottom: 2.4rem; }
+  .work__date {
+    color: #fff;
+    border-radius: 1.6rem;
+    background-color: #21243d;
+    padding: 0.05rem 1rem;
+    margin-right: 2rem;
+    font-weight: 700; }
+  .work__tags {
+    color: #8695a4; }
+  .work:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    height: 1px;
+    width: 90%;
+    border-bottom: 1px solid #8695a4;
+    transform: translate(-50%, -50%); }
+
+.header {
+  padding: 2rem 2rem 0 2rem; }
+  .header .paragraph {
+    margin-bottom: 2.8rem; }
+
+nav {
+  margin-bottom: 2.4rem; }
+
+.header__hero-img {
+  max-width: 175px;
+  width: 100%;
+  box-shadow: -0.3rem 1rem #edf7fa;
+  border-radius: 50%; }
+
+.nav-list_hidden {
+  display: none; }
+
+.hamburger {
+  font-size: 3.5rem; }
+
+.header__hero-img {
+  margin-bottom: 3.5rem; }
+
+.btn {
+  margin-bottom: 6rem; }
+
+.recent-posts {
+  background-color: #edf7fa;
+  padding-bottom: 4rem; }
+
+main {
+  margin-bottom: 15rem; }

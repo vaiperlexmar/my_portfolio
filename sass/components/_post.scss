@@ -1,0 +1,30 @@
+.post {
+  font-size: $paragraph-font-size;
+  background-color: $color-white;
+  padding: 2rem;
+  margin: 1.8rem 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem $color-blue;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &__date {
+    padding-right: 2.4rem;
+    border-right: 1px solid black;
+    margin-right: 2.4rem;
+  }
+
+  &__heading {
+    font-size: $post-heading-font-size;
+    margin-bottom: 1.2rem;
+  }
+
+  &__meta {
+    margin-bottom: 2rem;
+  }
+
+  &:active {
+    scale: 0.95;
+    box-shadow: 0 0.2rem 1rem $color-blue;
+  }
+}

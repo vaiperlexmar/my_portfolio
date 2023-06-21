@@ -1,0 +1,43 @@
+.work {
+  padding: 0 1.8rem 1.8rem 1.8rem;
+  position: relative;
+
+  &__img {
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 1.8rem;
+  }
+
+  &__heading {
+    font-size: $work-heading-font-size;
+    margin-bottom: 1.6rem;
+  }
+
+  &__meta {
+    margin-bottom: 2.4rem;
+  }
+
+  &__date {
+    color: $color-white;
+    border-radius: 1.6rem;
+    background-color: $color-dark;
+    padding: 0.05rem 1rem;
+    margin-right: 2rem;
+    font-weight: 700;
+  }
+
+  &__tags {
+    color: $color-light;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    height: 1px;
+    width: 90%;
+    border-bottom: 1px solid $color-light;
+    transform: translate(-50%, -50%);
+  }
+}
