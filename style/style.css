@@ -98,6 +98,17 @@ section {
     border-bottom: 1px solid #8695a4;
     transform: translate(-50%, -50%); }
 
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 3.5rem;
+  margin-bottom: 2.5rem; }
+
+.footer {
+  margin-bottom: 5.4rem; }
+  .footer .footer__copyright {
+    font-size: 1.4rem; }
+
 .header {
   padding: 2rem 2rem 0 2rem; }
   .header .paragraph {

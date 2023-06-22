@@ -1,0 +1,13 @@
+.social {
+  display: flex;
+  justify-content: center;
+  gap: $mobile-social-item-gap;
+  margin-bottom: 2.5rem;
+}
+
+.footer {
+  margin-bottom: 5.4rem;
+  .footer__copyright {
+    font-size: 1.4rem;
+  }
+}
