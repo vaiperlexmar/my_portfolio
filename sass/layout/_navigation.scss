@@ -1,7 +1,54 @@
-.nav-list_hidden {
+nav {
   display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9900;
+  overflow-y: scroll;
+  background-color: $color-white;
+  transition: all 0.2s;
+
+  .nav-list {
+    list-style: none;
+    text-align: center;
+    margin-top: 6.4rem;
+
+    &__item {
+      display: block;
+      font-size: 2rem;
+      font-weight: 500;
+      color: $color-dark;
+      text-decoration: none;
+      margin-bottom: 1rem;
+    }
+  }
 }
 
 .hamburger {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  position: relative;
+  z-index: 9999;
+
   font-size: 3.5rem;
+  cursor: pointer;
+  width: 100vw;
+  height: 5rem;
+  padding-right: 2rem;
+
+  &__container {
+    display: block;
+    width: 100vw;
+    height: 5rem;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9998;
+
+    background-color: $color-white;
+  }
 }

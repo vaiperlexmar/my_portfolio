@@ -1,3 +1,28 @@
+@keyframes smoothAppearance {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes smoothDisappearance {
+  0% {
+    opacity: 1;
+    transform: translateY(0); }
+  100% {
+    opacity: 0;
+    transform: translateY(-100%); } }
+
+.disappearance-animation {
+  animation-name: smoothDisappearance;
+  animation-duration: 200ms;
+  animation-fill-mode: forwards; }
+
+.appearance-animation {
+  animation-name: smoothAppearance;
+  animation-duration: 400ms; }
+
 *,
 *::after,
 *::before {
@@ -6,7 +31,8 @@
   box-sizing: inherit; }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding-top: 8rem; }
 
 html {
   font-size: 62.5%;
@@ -34,6 +60,12 @@ section {
 
 .u-center-text {
   text-align: center; }
+
+.hidden {
+  display: none; }
+
+.open {
+  display: block; }
 
 .btn {
   border: 0;
@@ -114,20 +146,54 @@ section {
   .header .paragraph {
     margin-bottom: 2.8rem; }
 
-nav {
-  margin-bottom: 2.4rem; }
-
 .header__hero-img {
   max-width: 175px;
   width: 100%;
   box-shadow: -0.3rem 1rem #edf7fa;
   border-radius: 50%; }
 
-.nav-list_hidden {
-  display: none; }
+nav {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9900;
+  overflow-y: scroll;
+  background-color: #fff;
+  transition: all 0.2s; }
+  nav .nav-list {
+    list-style: none;
+    text-align: center;
+    margin-top: 6.4rem; }
+    nav .nav-list__item {
+      display: block;
+      font-size: 2rem;
+      font-weight: 500;
+      color: #21243d;
+      text-decoration: none;
+      margin-bottom: 1rem; }
 
 .hamburger {
-  font-size: 3.5rem; }
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  z-index: 9999;
+  font-size: 3.5rem;
+  cursor: pointer;
+  width: 100vw;
+  height: 5rem;
+  padding-right: 2rem; }
+  .hamburger__container {
+    display: block;
+    width: 100vw;
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9998;
+    background-color: #fff; }
 
 .header__hero-img {
   margin-bottom: 3.5rem; }

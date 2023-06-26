@@ -1,1 +1,34 @@
+@keyframes smoothAppearance {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
 
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes smoothDisappearance {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
+
+.disappearance-animation {
+  animation-name: smoothDisappearance;
+  animation-duration: 200ms;
+  animation-fill-mode: forwards;
+}
+
+.appearance-animation {
+  animation-name: smoothAppearance;
+  animation-duration: 400ms;
+}
