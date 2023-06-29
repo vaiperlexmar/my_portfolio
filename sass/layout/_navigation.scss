@@ -52,3 +52,31 @@ nav {
     background-color: $color-white;
   }
 }
+
+@include tablet {
+  nav {
+    display: flex;
+    justify-content: flex-end;
+
+    .nav-list {
+      display: flex;
+      gap: 3.3rem;
+      margin: 2.7rem 6rem;
+      align-items: center;
+
+      &__item {
+        display: inline-block;
+        margin: 0;
+      }
+    }
+  }
+
+  .hamburger {
+    display: none;
+
+    &__container {
+      display: none;
+      height: auto;
+    }
+  }
+}

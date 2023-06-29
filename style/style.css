@@ -58,9 +58,6 @@ section {
   margin-bottom: 2rem;
   text-transform: capitalize; }
 
-.u-center-text {
-  text-align: center; }
-
 .hidden {
   display: none; }
 
@@ -143,6 +140,8 @@ section {
 
 .header {
   padding: 2rem 2rem 0 2rem; }
+  .header__welcome {
+    text-align: center; }
   .header .paragraph {
     margin-bottom: 2.8rem; }
 
@@ -151,6 +150,12 @@ section {
   width: 100%;
   box-shadow: -0.3rem 1rem #edf7fa;
   border-radius: 50%; }
+
+@media (min-width: 992px) {
+  .header__welcome {
+    display: grid;
+    grid-template-columns: repeat(2, 50rem);
+    justify-content: center; } }
 
 nav {
   display: none;
@@ -194,6 +199,24 @@ nav {
     left: 0;
     z-index: 9998;
     background-color: #fff; }
+
+@media (min-width: 768px) {
+  nav {
+    display: flex;
+    justify-content: flex-end; }
+    nav .nav-list {
+      display: flex;
+      gap: 3.3rem;
+      margin: 2.7rem 6rem;
+      align-items: center; }
+      nav .nav-list__item {
+        display: inline-block;
+        margin: 0; }
+  .hamburger {
+    display: none; }
+    .hamburger__container {
+      display: none;
+      height: auto; } }
 
 .header__hero-img {
   margin-bottom: 3.5rem; }

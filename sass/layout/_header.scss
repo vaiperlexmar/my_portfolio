@@ -1,6 +1,10 @@
 .header {
   padding: $mobile-header-padding;
 
+  &__welcome {
+    text-align: center;
+  }
+
   .paragraph {
     margin-bottom: 2.8rem;
   }
@@ -11,4 +15,12 @@
   width: 100%;
   box-shadow: -0.3rem 1rem $color-light-blue;
   border-radius: 50%;
+}
+
+@include desktop {
+  .header__welcome {
+    display: grid;
+    grid-template-columns: repeat(2, 50rem);
+    justify-content: center;
+  }
 }

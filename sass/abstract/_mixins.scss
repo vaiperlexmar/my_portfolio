@@ -3,3 +3,15 @@
   display: table;
   clear: both;
 }
+
+@mixin tablet {
+  @media (min-width: $breakpoint-medium) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $breakpoint-large) {
+    @content;
+  }
+}
