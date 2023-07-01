@@ -24,15 +24,15 @@
       </div>
       <nav id="nav">
         <ul class="nav-list" id="nav-list">
-          <a href="#" class="nav-list__item"><li>Works</li></a>
-          <a href="#" class="nav-list__item"><li>Blog</li></a>
-          <a href="#" class="nav-list__item"><li>Contact</li></a>
+          <li><a href="#" class="nav-list__item">Works</a></li>
+          <li><a href="#" class="nav-list__item">Blog</a></li>
+          <li><a href="#" class="nav-list__item">Contact</a></li>
         </ul>
       </nav>
 
       <div class="header__welcome">
-        <img src="/img/Hero.png" alt="Me" class="header__hero-img" />
-        <div class="header__text-box">
+        <img src="/img/Hero.png" alt="Me" class="header__hero-img column-2" />
+        <div class="header__text-box column-1">
           <p class="heading-primary">
             Hi, I am Ilya, <br />
             Frontend Developer
@@ -49,36 +49,41 @@
 
     <main>
       <section class="recent-posts">
-        <h3 class="heading-secondary">Recent post</h3>
-        <div class="post">
-          <h2 class="post__heading">Making a design system from scratch</h2>
-          <div class="post__meta">
-            <span class="post__date">12 Feb 2023</span>
-            <span class="post__tags">Design, Pattern</span>
-          </div>
-          <p class="paragraph">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit. Exercitation
-            veniam consequat sunt nostrud amet.
-          </p>
+        <div class="flex-box">
+          <h3 class="heading-secondary">Recent post</h3>
+          <a href="#" class="recent-posts__view-all">View all</a>
         </div>
-
-        <div class="post">
-          <h2 class="post__heading">Creating pixel perfect icons in Figma</h2>
-          <div class="post__meta">
-            <span class="post__date">12 Feb 2023</span>
-            <span class="post__tags">Design, Pattern</span>
+        <div class="flex-box">
+          <div class="post">
+            <h2 class="post__heading">Making a design system from scratch</h2>
+            <div class="post__meta">
+              <span class="post__date">12 Feb 2023</span>
+              <span class="post__tags">Design, Pattern</span>
+            </div>
+            <p class="paragraph">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
           </div>
-          <p class="paragraph">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit. Exercitation
-            veniam consequat sunt nostrud amet.
-          </p>
+
+          <div class="post">
+            <h2 class="post__heading">Creating pixel perfect icons in Figma</h2>
+            <div class="post__meta">
+              <span class="post__date">12 Feb 2023</span>
+              <span class="post__tags">Design, Pattern</span>
+            </div>
+            <p class="paragraph">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+          </div>
         </div>
       </section>
 
       <section class="featured-works">
-        <h3 class="heading-secondary">featured works</h3>
+        <h3 class="heading-secondary">Featured works</h3>
         <div class="work">
           <img src="/img/Work-preview.png" class="work__img" alt="Dashboard" />
           <h2 class="work__heading">Designing Dashboards</h2>

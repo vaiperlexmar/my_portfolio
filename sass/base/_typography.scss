@@ -1,7 +1,7 @@
 .heading-primary {
   font-size: 3.2rem;
   font-weight: 700;
-  line-height: 4rem;
+  line-height: 1.4;
   margin-bottom: 2rem;
 }
 
@@ -14,5 +14,17 @@
   text-align: center;
   font-weight: 400;
   margin-bottom: 2rem;
-  text-transform: capitalize;
+}
+
+@include desktop {
+  .heading-primary {
+    font-size: 4.4rem;
+    margin-bottom: 4rem;
+    line-height: 1.5;
+  }
+
+  .heading-secondary {
+    font-size: 2.2rem;
+    text-align: start;
+  }
 }

@@ -1,0 +1,9 @@
+section {
+  padding-top: 2.4rem;
+}
+
+@include desktop {
+  section {
+    padding: 2.4rem 12%;
+  }
+}

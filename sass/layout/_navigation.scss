@@ -57,6 +57,7 @@ nav {
   nav {
     display: flex;
     justify-content: flex-end;
+    position: absolute;
 
     .nav-list {
       display: flex;
