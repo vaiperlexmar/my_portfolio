@@ -15,7 +15,7 @@
   }
 
   &__heading {
-    font-size: $mobile-post-heading-font-size;
+    font-size: $mobile-medium-heading-font-size;
     margin-bottom: 1.2rem;
   }
 
@@ -26,5 +26,21 @@
   &:active {
     scale: 0.95;
     box-shadow: 0 0.2rem 1rem $color-blue;
+  }
+}
+
+@include desktop {
+  .post {
+    padding: 2.4rem;
+
+    &__heading {
+      font-size: $desktop-medium-heading-font-size;
+      margin-bottom: 2rem;
+    }
+
+    &__meta {
+      font-size: $desktop-medium-font-size;
+      margin-bottom: 2rem;
+    }
   }
 }

@@ -16,6 +16,12 @@
   margin-bottom: 2rem;
 }
 
+.link {
+  font-size: $paragraph-font-size;
+  text-decoration: none;
+  color: $color-secondary;
+}
+
 @include desktop {
   .heading-primary {
     font-size: 4.4rem;

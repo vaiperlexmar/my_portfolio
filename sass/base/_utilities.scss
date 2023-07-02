@@ -5,3 +5,10 @@
 .open {
   display: block;
 }
+
+@include mobile {
+  .mobile-hidden {
+    visibility: hidden;
+    display: none;
+  }
+}

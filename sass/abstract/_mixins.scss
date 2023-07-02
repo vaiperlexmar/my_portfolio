@@ -4,6 +4,12 @@
   clear: both;
 }
 
+@mixin mobile {
+  @media (max-width: $breakpoint-small) {
+    @content;
+  }
+}
+
 @mixin tablet {
   @media (min-width: $breakpoint-medium) {
     @content;

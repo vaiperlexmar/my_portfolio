@@ -5,5 +5,21 @@ section {
 @include desktop {
   section {
     padding: 2.4rem 12%;
+
+    .recent-posts {
+      &__heading {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .heading-secondary {
+          margin: 0;
+        }
+      }
+
+      &__post-box {
+        display: flex;
+      }
+    }
   }
 }

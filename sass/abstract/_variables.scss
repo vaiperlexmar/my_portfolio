@@ -3,10 +3,11 @@
 $color-primary: #ff6464;
 $color-secondary: #00a8cc;
 $color-dark: #21243d;
-$color-light: #8695a4;
+$color-light-gray: #8695a4;
 $color-white: #fff;
 $color-light-blue: #edf7fa;
 $color-blue: #bbe1fa;
+$color-extralight-gray: #e0e0e0;
 
 // Layout
 
@@ -16,11 +17,17 @@ $mobile-social-item-gap: 3.5rem;
 
 // Breakpoints
 
+$breakpoint-small: 576px; // Mobile
 $breakpoint-medium: 768px; // Tablets
 $breakpoint-large: 992px; // Desktop
 
 // Font
 
 $paragraph-font-size: 1.6rem;
-$mobile-post-heading-font-size: 2.2rem;
-$mobile-work-heading-font-size: 2.4rem;
+$mobile-medium-heading-font-size: 2.2rem;
+$mobile-large-heading-font-size: 2.4rem;
+
+$desktop-medium-heading-font-size: 2.6rem;
+$desktop-large-heading-font-size: 3rem;
+
+$desktop-medium-font-size: 1.8rem;
