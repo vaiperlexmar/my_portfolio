@@ -1,11 +1,16 @@
 "use strict";
 
 const TABLET_SCREEN = 768;
+const COLOR_PRIMARY = "#ff6464";
 
 const navLinks = document.querySelector(".nav-list");
 const hamburger = document.querySelector(".hamburger");
 const nav = document.querySelector("#nav");
 const heroImg = document.querySelector(".header__hero-img");
+const pageTitle = document.title;
+const navLinksArr = document.querySelectorAll(".nav-list__item");
+
+// Logic of hamburger
 
 function toggleMenu() {
   if (nav.classList.contains("open")) {
@@ -34,31 +39,12 @@ function checkWindowSize() {
 window.addEventListener("resize", checkWindowSize);
 hamburger.addEventListener("click", toggleMenu);
 
-let animationTimer;
-let animationInProgress = false;
-const swapImgAnimationDuration = 400;
+// Change of nav-link__item depending on the title
 
-heroImg.addEventListener("mouseenter", function () {
-  if (!animationInProgress) {
-    animationInProgress = true;
-    heroImg.classList.add("rotate-right-animation");
-    if (heroImg.src.endsWith("img/Hero.png")) {
-      animationTimer = setTimeout(function () {
-        heroImg.src = "img/Hero2.png";
-        animationInProgress = false;
-      }, swapImgAnimationDuration);
-    }
-    if (heroImg.src.endsWith("img/Hero2.png")) {
-      animationTimer = setTimeout(function () {
-        heroImg.src = "img/Hero.png";
-        animationInProgress = false;
-      }, swapImgAnimationDuration);
-    }
-  }
-});
+if (pageTitle === "Works | Portfolio") {
+  navLinksArr[0].style.color = COLOR_PRIMARY;
+}
 
-heroImg.addEventListener("mouseleave", function () {
-  clearTimeout(animationTimer);
-  heroImg.classList.remove("rotate-right-animation");
-  animationInProgress = false;
-});
+if (pageTitle === "Blog | Portfolio") {
+  navLinksArr[1].style.color = COLOR_PRIMARY;
+}

@@ -40,9 +40,10 @@ nav {
   padding-right: 2rem;
 
   &__container {
-    display: block;
+    display: flex;
     width: 100vw;
     height: 5rem;
+    align-items: center;
 
     position: fixed;
     top: 0;
@@ -58,6 +59,7 @@ nav {
     display: flex;
     justify-content: flex-end;
     position: absolute;
+    align-items: center;
 
     .nav-list {
       display: flex;
@@ -79,5 +81,25 @@ nav {
       display: none;
       height: auto;
     }
+  }
+}
+
+.arrow-back {
+  display: block;
+  text-decoration: none;
+  border: 0;
+
+  padding-left: 2rem;
+  cursor: pointer;
+  color: $color-dark;
+
+  span {
+    display: block;
+    font-size: 3rem;
+  }
+
+  &:link,
+  &:visited {
+    color: $color-dark;
   }
 }

@@ -8,6 +8,25 @@
   cursor: pointer;
   transition: all 0.2s;
 
+  &--no-shadow {
+    box-shadow: none;
+  }
+
+  &--underlined {
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      height: 1px;
+      width: 90%;
+      border-bottom: 1px solid $color-light-gray;
+      transform: translateX(-50%);
+    }
+  }
+
   &__date {
     padding-right: 2.4rem;
     border-right: 1px solid black;
@@ -21,6 +40,10 @@
 
   &__meta {
     margin-bottom: 2rem;
+  }
+
+  &__tags {
+    color: $color-light-gray;
   }
 
   &:active {

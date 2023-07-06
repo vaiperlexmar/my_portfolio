@@ -3,6 +3,12 @@
   font-weight: 700;
   line-height: 1.4;
   margin-bottom: 2rem;
+
+  &_black {
+    font-weight: 900;
+    font-size: 3rem;
+    padding: 0 1.8rem;
+  }
 }
 
 .paragraph {
@@ -27,6 +33,10 @@
     font-size: 4.4rem;
     margin-bottom: 4rem;
     line-height: 1.5;
+
+    &_black {
+      padding: 0 12%;
+    }
   }
 
   .heading-secondary {

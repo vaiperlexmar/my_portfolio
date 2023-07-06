@@ -47,6 +47,10 @@
     display: inherit;
     color: inherit;
     text-decoration: none;
+
+    &:not(:last-child) {
+      margin-bottom: 3rem;
+    }
   }
 }
 
@@ -90,14 +94,6 @@
     &:hover {
       transform: scale(1.01);
       box-shadow: 2px 2px 2px 1px $color-extralight-gray;
-    }
-
-    &__link {
-      display: inherit;
-      color: inherit;
-      &:not(:last-child) {
-        margin-bottom: 3rem;
-      }
     }
   }
 }
