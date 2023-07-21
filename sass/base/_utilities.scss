@@ -12,3 +12,25 @@
     display: none;
   }
 }
+
+.u-desktop-padding-reset {
+  @include desktop {
+    padding: 0;
+  }
+}
+
+.u-padding-h-20 {
+  padding: 0 20%;
+}
+
+.u-h-mobile-padding {
+  padding: 0 1.8rem;
+}
+
+.u-b-mobile-margin-20 {
+  margin-bottom: 2rem;
+}
+
+.u-b-mobile-margin-25 {
+  margin-bottom: 2.5rem;
+}

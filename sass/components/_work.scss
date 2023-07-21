@@ -17,6 +17,17 @@
 
   &__meta {
     margin-bottom: 2.4rem;
+
+    &_flex {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding-left: 1.8rem;
+    }
+
+    &_bigger-mobile {
+      font-size: 1.8rem;
+    }
   }
 
   &__date {
@@ -25,11 +36,19 @@
     background-color: $color-dark;
     padding: 0.05rem 1rem;
     margin-right: 2rem;
-    font-weight: 700;
+    font-weight: 900;
+
+    &_red {
+      background-color: $color-primary;
+    }
   }
 
   &__tags {
     color: $color-light-gray;
+
+    &_black {
+      color: $color-dark;
+    }
   }
 
   &:before {
@@ -52,6 +71,11 @@
       margin-bottom: 3rem;
     }
   }
+
+  &__description {
+    padding: 0 1.8rem;
+    margin-bottom: 2.4rem;
+  }
 }
 
 @include desktop {
@@ -65,6 +89,26 @@
       max-width: 20vw;
       width: 100%;
       margin: 0;
+
+      &_description {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+
+        display: block;
+        margin: 0 auto 2.5rem;
+      }
+    }
+
+    &__meta {
+      margin-bottom: 2.4rem;
+
+      &_flex {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-left: 1.8rem;
+      }
     }
 
     &__heading {

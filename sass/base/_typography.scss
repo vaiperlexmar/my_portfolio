@@ -3,16 +3,30 @@
   font-weight: 700;
   line-height: 1.4;
   margin-bottom: 2rem;
+  padding: 0 1.8rem;
 
   &_black {
     font-weight: 900;
     font-size: 3rem;
-    padding: 0 1.8rem;
+  }
+
+  &_smaller {
+    font-size: 3rem;
   }
 }
 
 .paragraph {
   font-size: $paragraph-font-size;
+
+  &_big {
+    font-size: $mobile-paragraph-big-font-size;
+    font-weight: 500;
+  }
+
+  &_large {
+    font-size: $mobile-paragraph-large-font-size;
+    font-weight: 500;
+  }
 }
 
 .heading-secondary {
@@ -36,6 +50,23 @@
 
     &_black {
       padding: 0 12%;
+    }
+
+    &_smaller {
+      font-size: 3.4rem;
+      padding: 0 40% 0 1%;
+    }
+  }
+
+  .paragraph {
+    &_big {
+      font-size: $desktop-paragraph-big-font-size;
+      font-weight: 500;
+    }
+
+    &_large {
+      font-size: $desktop-large-heading-font-size;
+      font-weight: 500;
     }
   }
 
